@@ -14,9 +14,13 @@
       "profile": "https://www.linkedin.com/in/thibaut-trouve",
       "contributions": [
         "code",
-        "tool"
+        "tool",
+        "infra",
+        "test"
       ]
     }
   ],
-  "repoType": "github"
+  "repoType": "github",
+  "commitConvention": "angular",
+  "contributorsPerLine": 7
 }
