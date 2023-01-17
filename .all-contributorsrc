@@ -1,0 +1,22 @@
+{
+  "projectName": "sendgrid-ts-mail",
+  "projectOwner": "thibaut-trouve",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "contributors": [
+    {
+      "login": "thibaut-trouve",
+      "name": "Thibaut Trouvé",
+      "avatar_url": "https://avatars.githubusercontent.com/u/31539507?v=3",
+      "profile": "https://www.linkedin.com/in/thibaut-trouve",
+      "contributions": [
+        "code",
+        "tool"
+      ]
+    }
+  ],
+  "repoType": "github"
+}
