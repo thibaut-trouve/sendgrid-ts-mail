@@ -75,7 +75,19 @@ Here are some projects that use `sendgrid-ts-mail`:
 Made with :heart: by [@thibaut-trouve](https://twitter.com/thibaut-trouve) and all these wonderful contributors ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://www.linkedin.com/in/thibaut-trouve"><img src="https://avatars.githubusercontent.com/u/31539507?v=3?s=100" width="100px;" alt="Thibaut Trouvé"/><br /><sub><b>Thibaut Trouvé</b></sub></a><br /><a href="https://github.com/thibaut-trouve/sendgrid-ts-mail/commits?author=thibaut-trouve" title="Code">💻</a> <a href="#tool-thibaut-trouve" title="Tools">🔧</a> <a href="#infra-thibaut-trouve" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/thibaut-trouve/sendgrid-ts-mail/commits?author=thibaut-trouve" title="Tests">⚠️</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind are welcome!
