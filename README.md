@@ -7,15 +7,15 @@ A 100% typesafe library for sending mail using the Node.js Sendgrid SDK.
 
 🔥 Never forget a variable in an email again.
 
-### How does it work ?
+## How does it work ?
 It runs in 3 steps:
 - Fetches your Sendgrid Templates using your own ApiKey
 - Detects and extracts the variables from the templates
 - Generate typings
 
-### Getting started
+## Getting started
 
-#### 1. Install dependencies
+### 1. Install dependencies
 ```bash
 # For npm
 npm install --save sendgrid-ts-mail
@@ -27,12 +27,12 @@ pnpm add sendgrid-ts-mail
 bun add sendgrid-ts-mail
 ```
 
-#### 2. Set your apiKey
+### 2. Set your apiKey
 ```bash
 TODO
 ```
 
-#### 3. Generate your typings
+### 3. Generate your typings
 ```bash
 # For npm & yarn
 npx sendgrid-ts-mail generate
@@ -40,7 +40,7 @@ npx sendgrid-ts-mail generate
 pnpx sendgrid-ts-mail generate
 ```
 
-#### 4. Use in your app
+### 4. Use in your app
 ```ts
 import sgMail from 'sendgrid-ts-mail';
 
@@ -56,7 +56,21 @@ sgMail.send({
 
 ```
 
+## Configuration 
 
+### Environment variable name
+You can give as a parameter the name of the environment variable for your Sendgrid Api Key.
+`npx sendgrid-ts-mail generate -e SENDGRID_API_KEY`
+It will read from your .env file.
+
+### Integrate to your CI
+It is advised to add the typings generation before building your project:
+`npx sendgrid-ts-mail generate && npm run build`
+
+
+## Todo-list
+- [ ] Improve the variable detection (read from the IFs, etc)
+- [ ] Batch the getSendgridTemplate(:id) to improve performance.
 
 ## Projects using `sendgrid-ts-mail`
 
@@ -64,7 +78,12 @@ Here are some projects that use `sendgrid-ts-mail`:
 
 - [X](https://github.com/)
 
-## Developer documentatio
+---
+## Developer documentation
+
+### Contributions
+
+All type of contributions are appreciated. 
 
 ### NPM scripts
 
@@ -75,6 +94,7 @@ Here are some projects that use `sendgrid-ts-mail`:
 - `npm run test:prod`: Run linting and generate coverage
 - `npm run report-coverage`: Report the coverage with coveralls
 
+--- 
 ## Credits
 
 Made with :heart: by [@thibaut-trouve](https://twitter.com/thibaut-trouve) and all these wonderful contributors ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
