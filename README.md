@@ -10,9 +10,15 @@ It runs in 3 steps:
 - Detects and extracts the variables from the templates
 - Generate typings
 
+There is no extra dependency, [@sendgrid/mail](https://github.com/sendgrid/sendgrid-nodejs/tree/main/packages/mail) is a peer-dependency. 
+This package's purpose is only to add typings to the official SendGrid Library.
+
 ## Getting started
 
 ### 1. Install dependencies
+If you do not use the official Sendgrid Javascript SDK, you need to install it.
+(`npm install --save @sendgrid/mail`)
+
 ```bash
 # For npm
 npm install --save sendgrid-ts-mail
@@ -38,6 +44,9 @@ pnpx sendgrid-ts-mail generate
 
 `-k / --key {variable_name}`: Specify a custom key name for looking up the SENDGRID_API_KEY in the environment file. Defaults to 'SENDGRID_API_KEY'
 
+When updating an email in Sendgrid's interface, it is advised to re-generate the typings if you added/removed variables.
+
+
 
 ### 3. Use in your app
 ```ts
@@ -52,7 +61,6 @@ sgMail.send({
     business: 'Acme Corp' // Type-safe
   },
 });
-
 ```
 
 ## Configuration 
