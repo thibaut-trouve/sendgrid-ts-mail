@@ -33,7 +33,9 @@ pnpx sendgrid-ts-mail generate
 ```
 ##### Optional Parameters:
 `-h / --help`: Display usage
+
 `-e / --env {path}`: Path to .env file. Defaults to './.env'
+
 `-k / --key {variable_name}`: Specify a custom key name for looking up the SENDGRID_API_KEY in the environment file. Defaults to 'SENDGRID_API_KEY'
 
 
