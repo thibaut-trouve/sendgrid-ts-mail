@@ -1,7 +1,4 @@
-
-
 # Sendgrid Typesafe Mail
-
 
 A 100% typesafe library for sending mail using the Node.js Sendgrid SDK.
 
@@ -27,20 +24,20 @@ pnpm add sendgrid-ts-mail
 bun add sendgrid-ts-mail
 ```
 
-### 2. Set your apiKey
-```bash
-TODO
-```
-
-### 3. Generate your typings
+### 2. Generate your typings
 ```bash
 # For npm & yarn
 npx sendgrid-ts-mail generate
 # For pnpm
 pnpx sendgrid-ts-mail generate
 ```
+##### Optional Parameters:
+`-h / --help`: Display usage
+`-e / --env {path}`: Path to .env file. Defaults to './.env'
+`-k / --key {variable_name}`: Specify a custom key name for looking up the SENDGRID_API_KEY in the environment file. Defaults to 'SENDGRID_API_KEY'
 
-### 4. Use in your app
+
+### 3. Use in your app
 ```ts
 import sgMail from 'sendgrid-ts-mail';
 
@@ -58,11 +55,6 @@ sgMail.send({
 
 ## Configuration 
 
-### Environment variable name
-You can give as a parameter the name of the environment variable for your Sendgrid Api Key.
-`npx sendgrid-ts-mail generate -e SENDGRID_API_KEY`
-It will read from your .env file.
-
 ### Integrate to your CI
 It is advised to add the typings generation before building your project:
 `npx sendgrid-ts-mail generate && npm run build`
@@ -70,7 +62,7 @@ It is advised to add the typings generation before building your project:
 
 ## Todo-list
 - [ ] Improve the variable detection (read from the IFs, etc)
-- [ ] Batch the getSendgridTemplate(:id) to improve performance.
+- [x] Batch the getSendgridTemplate(:id) to improve performance.
 
 ## Projects using `sendgrid-ts-mail`
 

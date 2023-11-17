@@ -10,7 +10,7 @@ const buildInterface = (name: string, entries: [string, string][], opt?: BuildIn
   `${buildInterfaceKeyValues(entries)}` +
   `}`;
 
-export async function buildTypescriptTypes(variableMap: Record<string, string[]>) {
+export function buildTypescriptTypes(variableMap: Record<string, string[]>) {
   return (
     buildInterface(
       "SendGridTsMail",
