@@ -73,7 +73,6 @@
     "@rollup/plugin-typescript": "^11.1.5",
     "@types/jest": "^29.5.7",
     "@types/node": "^20.8.10",
-    "arg": "^5.0.2",
     "coveralls": "^3.1.1",
     "eslint": "^8.53.0",
     "husky": "^8.0.3",
@@ -87,12 +86,15 @@
     "ts-node": "^10.9.1",
     "tslib": "^2.6.2",
     "typedoc": "^0.25.3",
-    "typescript": "^5.2.2",
-    "dotenv": "^16.3.1",
-    "resolve-pkg": "^2.0.0"
+    "typescript": "^5.2.2"
+
   },
   "peerDependencies": {
     "@sendgrid/mail": "^7.7.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "arg": "^5.0.2",
+    "dotenv": "^16.3.1",
+    "resolve-pkg": "^2.0.0"
+  }
 }
