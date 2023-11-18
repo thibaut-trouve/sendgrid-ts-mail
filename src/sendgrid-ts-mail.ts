@@ -7,7 +7,10 @@ export interface MailContent {
   value: string;
 }
 
-type TypedMailDataRequired<T extends keyof SendGridTsMail> = MailDataRequired &
+export type TypedMailDataRequired<T extends keyof SendGridTsMail> = Omit<
+  MailDataRequired,
+  "text" | "html" | "templateId" | "dynamicTemplateData" | "content"
+> &
   (
     | { text: string }
     | { html: string }

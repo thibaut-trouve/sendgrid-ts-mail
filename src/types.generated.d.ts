@@ -1,1 +1,5 @@
-export interface SendGridTsMail {}
+export interface SendGridTsMail {
+  foo: {
+    bar: string;
+  }
+}
